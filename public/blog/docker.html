@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/style.css">
+
+    <title>Will Otty</title>
+
+    <div class="header">
+        <a href="../index.html" class="logo"><img height="50px" src="../assets/wottyLogo2.png" alt="Wotty"></a>
+        <div class="header-right d-none d-lg-block">
+            <a href="../index.html">Home</a>
+            <a href="../blog.html">Blog</a>
+            <a href="../about.html">About</a>
+        </div>
+    </div>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Docker</h1>
+            </div>
+            <div class="row">
+                <p>
+                    <h2>Why learn Docker? </h2><br>Docker seems to be the industry standard development organisation tool for version control among other things. I will start by getting more information on what it is using <a href="https://www.youtube.com/watch?v=pTFZFxd4hOI">Docker Tutorial for Beginners [2021]</a>                    and
+                    <a href="https://www.smashingmagazine.com/2016/04/stop-installing-your-webdev-environment-locally-with-docker/">this docker tutorial.</a> expand list if can find more.
+
+                    <table>
+                        <tr>
+                            <th>Virtual Machine</th>
+                            <th>Container</th>
+                        </tr>
+                        <tr>
+                            <td>Abstraction of a machine hardware </td>
+                            <td>An isolated environment for running applications </td>
+                        </tr>
+                        <tr>
+                            <td>Why use virtual machines? Two apps run on two "virtual machines" have isolated environment.</td>
+                            <td>Why do we need containers? Each VM needs full-blown OS which is resource intensive and slow to start.</td>
+                        </tr>
+                    </table><br>
+                    <img src="../assets/Docker1.png" alt="DockerDifferences"> Hypervisor - Creates and manage virtual machines
+                    <br>Docker uses a Client server architecture, using a restful API.
+                    <img src="../assets/Docker2.png" alt="DockerDifferences">
+                    <h2>How's it different from git?</h2>
+                    Git is for version control, e.g. for textfiles. You build a docker container from a "dockerfile" (which is a textfile). This "dockerfile" is placed in a directory with many other files and folders. So if you put this directory, where the dockerfile is
+                    located in, into a git repository, then everyone who has access to it, can build the same docker container, with the same configurations and everything. is that what you mean? So, the docker container is a "building" and the DOCKER-repository
+                    is a market where you can download already built buildings (images), from that you can run a virtual machine/container. And the files in the GIT-repository (this is like a big archive for e.g. documents) are the "construction plans".
+                    You "share" the different version of the "construction plans" via git, so everyone can build every version of the building.
+                    <h3>Example Workflow:</h3>
+                    <ul>
+                        <li>git pull - pull the "construction - instructions" from git repository (e.g. dockerfile)</li>
+                        <li>docker build - build the docker image from that dockerfile-instructions</li>
+                        <li>docker push myDockerRepo/myDockerImage:latest - push the newly built docker image into the DOCKER repository (NOT the git-repository)</li>
+                    </ul>
+                    In your production environment:
+                    <ul>
+                        <li>docker pull myDockerRepo/myDockerImage:latest - pull the latest docker image from the DOCKER-repository</li>
+                        <li>docker run - run a new containerized instance (basically a VirtualMachine) FROM the docker image</li>
+                    </ul>
+                    <a href="https://stackoverflow.com/questions/49071356/when-to-pull-from-docker-repo-and-when-from-git-repo-and-then-build">Stackoverflow</a>
+                    <h2>What’s the difference between Kubernetes and Docker? </h2>
+                    While it’s common to compare Kubernetes with Docker, a more apt comparison is Kubernetes vs Docker Swarm. Docker Swarm is Docker’s orchestration technology that focuses on clustering for Docker containers – tightly integrated into the Docker ecosystem
+                    and using its own API.<br> A fundamental difference between Kubernetes and Docker is that Kubernetes is meant to run across a cluster while Docker runs on a single node. Kubernetes is more extensive than Docker
+                    Swarm and is meant to coordinate clusters of nodes at scale in production in an efficient manner. Kubernetes pods – scheduling units that can contain one or more containers in the Kubernetes ecosystem – are distributed among nodes
+                    to provide high availability.<br>- Make your infrastructure more robust and your app more highly available. Your app will remain online, even if some of the nodes go offline.
+                    <br>- Make your application more scalable. If your app starts to get a lot more load and you need to scale out to be able to provide a better user experience, it’s simple to spin up more containers or add more nodes to your Kubernetes
+                    cluster.
+                    <br>- Kubernetes and Docker work together. Docker provides an open standard for packaging and distributing containerised applications. Using Docker, you can build and run containers, and store and share container images. You can easily
+                    run a Docker build on a Kubernetes cluster, but Kubernetes itself is not a complete solution. To optimise Kubernetes in production, implement additional tools and services to manage security, governance, identity and access, along
+                    with continuous integration/continuous deployment (CI/CD) workflows and other DevOps practices.
+                    <br>- From
+                    <a href="https://azure.microsoft.com/en-gb/topic/kubernetes-vs-docker">Microsoft Azure</a>
+                    <h2>Linux</h2>
+                    Linux needs to be learned in order to troubleshoot docker issues. Is a case sensitive operating system. Everything is a file (Directories, programs etc). Linux distributions are different versions of linux. e.g.
+                    <ul>
+                        <li>Ubuntu</li>
+                        <li>Debian</li>
+                        <li>Alpine</li>
+                    </ul>
+                    <table>
+                        <tr>
+                            <th>Windows</th>
+                            <th>Linux</th>
+                        </tr>
+                        <tr>
+                            <td> <img src="../assets/Docker3.png" alt="DockerDifferences"> </td>
+                            <td> <img src="../assets/Docker4.png" alt="DockerDifferences"> </td>
+                        </tr>
+                        <td></td>
+                        <td>Bin = binarys/programs. Boot = files boot. Dev = Devices (files needed to access devices). Etc = editable text configuration (config files). Home = user directory. Root = home directory of root user. Lib = library files. Var =
+                            for frequently changing files e.g. log files. Proc = file for running processes</td>
+                        Linux Commands Description Echo Console print Pwd Print working directory. See where you are in directory Ls List files in directory. Cd Navigate to directory Cd ~ Navigate to home directory Mkdir Make directory Touch Create File Mv Move or rename file
+                        Rm Remove file Rm -r Remove folder and all files in folder Nano Basic text editor for Cat "Concatenate" but Cat can show file contents Head/Tail First/Last few lines of a file
+
+
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,15 +1,232 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+
+    <title>Will Otty</title>
+
+    <div class="header">
+        <a href="./index.html" class="logo"><img height="50px" src="./assets/wottyLogo2.png" alt="Wotty"></a>
+        <div class="header-right d-none d-lg-block">
+            <a class="active" href="./index.html">Home</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./about.html">About</a>
+        </div>
+    </div>
 </head>
 
 <body>
-    <h1>Static HTML</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img class="col-md-12" src="./assets/profileimage.png" alt="Avatar">
+            </div>
+            <p class="col-md-8"><br><br><b>Will Otty | Software Developer at FDM.</b>
+                <br><br> Will is a graduate of the University of Warwick with a degree in Engineering Business Management. He has experience in the finance and technology sector, having worked as an auditor at PwC and a data analyst at Vodafone. During
+                University, he learned to code using MATLAB, C, Java and Python. While auditing digital technologies at large financial institutions, Will's attention to detail was critical to him carrying out his daily tasks. At all times, he had to
+                maintain high-quality work often to very tight deadlines. In addition, Will managed his time alongside studying towards the ACA qualification, having passed 3 exams while at the firm. As part of an extracurricular student project, Will
+                managed the finances for a team of 40 students. He organised a group of 10 people to create and lead engaging pitches for investors. It was essential for Will to organise colleagues, collate ideas and resources effectively to ensure investment
+                was secured. His team generated over £50,000 in investment. Will would like to work within the technology industry where he can apply his skills.
+            </p>
+        </div>
+        <div align="center" class="row">
+            <hr>
+            <h1>Projects</h1>
+        </div>
+        <div align="center" class="row">
+            <div class="col-md-4">
+                <div class="col">
+                    <p>Building A Website</p>
+                </div>
+                <div class="col">
+                    <img src="./assets/websiteicon.png" class="imgtwo col-sm-4 " alt="Burger">
+                </div>
+                <div class="col">
+                    <a class="btn btn-primary" href="./projects/buildingwebsite.html" role="button">View Project</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="col">
+                    <p>Learning Java</p>
+                    <img src="./assets/javaicon.png" class="col-sm-4 imgtwo" alt="Burger">
+                </div>
+                <div class="col">
+                    <a class="btn btn-primary" href="./projects/learningjava.html" role="button">View Project</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="col">
+                    <p>Building An Electric Skateboard</p>
+                    <img src="./assets/esb.png" class="col-sm-4 imgtwo" alt="Burger">
+                </div>
+                <div class="col">
+                    <a class="btn btn-primary" href="./projects/esb.html" role="button">View Project</a>
+                </div>
+            </div>
+        </div>
+        <div align="center" class="row">
+            <hr>
+            <h1>CV</h1>
+        </div>
+
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+      FDM Group | 06/2021 - Current
+    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <strong>Python Developer | HSBC | 06/2022 - 09/2022
+                        </strong><br>Will utilised python to ingest and manipulate data for internal audit dashboards.<br>
+                        <ul>
+                            <li>Automation Development: Provided code to automate the production of Qlik Sense dashboards using Python.</li>
+                            <li>Manual Testing: Verified quality of data sources of Qlik Sense dashboards using SQL.</li>
+                            <li>Database Development: Scripted SQL code to manipulate and load data into SQL from CSVs.</li>
+                            <li>Dashboard Creation: Created Qlik Sense dashboards to aid audit analytics.</li>
+                        </ul>
+                        <br> <strong>Data Engineer | Lloyds of London | 02/2022 - 03/2022</strong><br> Will worked on porting legacy systems over to a data lake.<br>
+                        <ul>
+                            <li>Checked reconciliations of data from ingested data match data lake.</li>
+                            <li>Utilised Databricks to transform data to a standardised format for business intelligence.</li>
+                        </ul><br>
+                        <strong>Software Development Training | FDM Academy | 06/2021 - 02/2022</strong><br> Will learnt fundementals of software development and data engineering to become industry ready.<br>
+                        <ul>
+                            <li>Java Application Development</li>
+                            <li>Object-Oriented Programming</li>
+                            <li>Python Fundamentals</li>
+                            <li>Relational Databases</li>
+                            <li>Data Visualisation Foundation</li>
+                            <li>Excel and VBA</li>
+                            <li>Professional Skills</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+    Digital Audit Associate	| PwC | 03/2021 - 06/2021
+    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        <strong>Will has worked for PwC providing excellent assurance for FTSE 100 companies.</strong>
+                        <ul>
+                            <li>Managed time effectively which enabled him to learn ACA qualification, passing 3 exams covering accounting, technology, and assurance in his spare time.</li>
+                            <li>Diligently audited cash accounts assuring business operation.</li>
+                            <li>Liaised with clients to ensure work was done to a satisfactory degree.</li>
+                            <li>Gathered evidence to support assurance for large companies.</li>
+                            <li>Worked effectively in large teams to meet tight deadlines.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+    IT Support Consultant | FDM Group (DWP) | 01/2021 - 03/2021
+    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        <strong>Will provided excellent customer service skills on the support line in the government sector.</strong>
+                        <ul>
+                            <li>Swiftly diagnosed and fixed IT issues in a fast-paced environment.</li>
+                            <li>Created 3 articles to assist other consultants on fixing issues, one of his articles was used by consultants over 130 times. </li>
+                            <li>Learned to identify persisting issues and flag fixes to reduce call-in rate and solve time.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                        Junior IT Systems Analyst | Citizen's Advice Bureau | 11/2020 - 01/2021
+    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                    <div class="accordion-body">
+                        <strong>Will was responsible for proposing and implementing technologies to improve the business from VOIP to cloud server migration. </strong>
+                        <ul>
+                            <li>Managed IT effectively during merger to ensure nominal operation.</li>
+                            <li>Established remote working procedures for the organisation. </li>
+                            <li>Spearheaded azure cloud integration throughout charity, transferring legacy domain systems onto cloud.</li>
+                            <li>Reduced phone system operating costs by 10%, negotiating pricing and ensuring enhancements of services.</li>
+                            <li>Maintained and administered computer networks and environments, including computer hardware, software, and applications.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                        Finance & Sponsorship Manager | Student Led Project | 03/2019 - 12/2020
+    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                    <div class="accordion-body">
+                        <strong>Will founded a sponsorship team, creating a collaborative environment of 10 people to build an extensive sponsorship network.</strong>
+                        <ul>
+                            <li>Secured over £50,000 in funding from companies such as Delta, Michelin, Catapult & AVL.</li>
+                            <li>Met HRH Prince of Wales to showcase prototype motorcycle design.</li>
+                            <li>Created financial reporting framework to review project's financial status and prepared weekly reports to ensure team was on track with deadlines.</li>
+                            <li>Coordinated marketing campaign raising £1000 and increased brand awareness from flyers, social media and events.</li>
+                            <li>Liaised with academics and industry experts to gain further understanding of complex components of project.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+    Data Analytics Intern | Vodafone Group | 06/2019 - 10/2019
+    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+                    <div class="accordion-body">
+                        <strong>Will created automations and dashboards to digest data and identify valuable insights within the finance function.</strong>
+                        <ul>
+                            <li>Created Tableau dashboard relating exit interviews and employee retention.</li>
+                            <li>Automated production of manager performance reports using VBA, increasing scope from 12 to 200 seniors. Reduced creation time from 50 working hours to being distributed in 12 minutes.</li>
+                            <li>Utilised data-driven insights to provide strategic recommendations to enhance manager appraisals.</li>
+                            <li>Conducted workshops to teach a group of 7 employees how to use AlterYX.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+        BEng Engineering Business Management | University of Warwick | 06/2017 - 06/2020
+    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven">
+                    <div class="accordion-body">
+                        <strong>Will learnt to hone his problem solving and analytical skills while at University.</strong>
+                        <ul>
+                            <li>Mathematics and Data Science</li>
+                            <li>Engineering Design</li>
+                            <li>Automation and Robotics</li>
+                            <li>Introduction to Business Management</li>
+                            <li>International Business Strategy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>
